@@ -1,0 +1,18 @@
+{
+  "domain": "flutter",
+  "version": "1.0.0",
+  "released_at": "2026-02-24",
+  "skills": [
+    "flutter-architecture-standard",
+    "flutter-state-management-hybrid",
+    "flutter-dio-rest-standard",
+    "flutter-testing-standard",
+    "flutter-performance-standard",
+    "flutter-security-standard",
+    "flutter-ci-cd-standard",
+    "flutter-commit-message-standard",
+    "flutter-mobile-orchestrator"
+  ],
+  "deprecated": [],
+  "breaking_changes": []
+}
