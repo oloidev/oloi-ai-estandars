@@ -231,19 +231,19 @@ Documentation must be in English.
 When user requests:
 
 - "Create endpoint"
-  → Load endpoint-creation skill.
+  → Load laravel-endpoint-creation skill.
 - "Create module"
-  → Load ddd-module-creation skill.
+  → Load laravel-hexagonal-module-creation skill.
 - "Add authorization"
-  → Load policy-standard skill.
+  → Load laravel-policy-standard-spatie skill.
 - "Optimize performance"
-  → Load performance-octane skill.
+  → Load laravel-performance-octane-pattern skill.
 - "Create business logic"
-  → Load action-pattern skill.
+  → Load laravel-action-pattern-enterprise skill.
 - "Write tests"
-  → Load testing-standard skill.
+  → Load laravel-testing-standard skill.
 - "Add documentation"
-  → Load openapi-standard skill.
+  → Load laravel-backend-task-spec-writer skill.
 
 Agent must analyze the request before selecting skills.
 Multiple skills may be combined when appropriate.
