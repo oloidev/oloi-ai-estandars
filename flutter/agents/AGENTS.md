@@ -191,6 +191,77 @@ This standard applies to all Flutter skills in this repository.
 
 ---
 
+# Non-Negotiable Constraints
+
+1. Riverpod is the default state management solution.
+2. BLoC is allowed only for high-complexity workflows with explicit justification.
+3. Dio is mandatory for REST integrations.
+4. Business logic must not live in Widgets.
+5. Production-facing changes must include tests and technical documentation updates unless explicitly waived.
+
+---
+
+# Task Intake Contract (Asana)
+
+For each task, extract and confirm:
+
+1. Problem statement
+2. Business objective
+3. In-scope items
+4. Out-of-scope items
+5. Acceptance criteria
+6. Constraints and dependencies
+7. Risks and unknowns
+
+If any critical input is missing, state assumptions explicitly before execution.
+
+---
+
+# Verification Matrix by Task Type
+
+Feature:
+1. Unit tests for domain/application
+2. Widget tests for UI state handling
+3. Integration test for critical journey
+4. Documentation updates (behavior/architecture notes)
+
+Fix:
+1. Reproduction path documented
+2. Regression test mandatory
+3. Impacted tests updated
+4. Root-cause note in technical summary
+
+Refactor:
+1. Behavioral parity validation
+2. Existing tests remain green
+3. New tests only where coverage gap is introduced
+4. Architecture notes updated if boundaries changed
+
+Performance:
+1. Baseline metric captured
+2. Optimization implemented
+3. After metric captured
+4. Performance rationale documented
+
+Security:
+1. Threat/risk point identified
+2. Hardening change implemented
+3. Security-relevant test/verification added
+4. Security assumptions documented
+
+---
+
+# Escalation and Multi-Agent Routing Rules
+
+1. Always start with `flutter-orchestrator-agent`.
+2. Add `flutter-architect-agent` for boundary or design decisions.
+3. Add `flutter-api-agent` for API-heavy tasks.
+4. Add `flutter-test-agent` for test debt or flaky behavior.
+5. Add `flutter-performance-agent` for performance incidents.
+6. Add `flutter-security-agent` for auth, token, storage, or data exposure changes.
+
+---
+
 # Strict Prohibitions
 
 - No business logic inside Widgets.

@@ -17,6 +17,22 @@ Implement product features end-to-end with clean code, robust behavior, and prod
 3. Keep UI thin and business logic testable.
 4. Deliver complete test coverage for impacted paths.
 
+## UI State Completeness
+
+Every user flow must handle:
+
+1. Loading
+2. Success
+3. Empty
+4. Error
+5. Retry
+
+## Feature Delivery Evidence
+
+1. Scope implemented per Asana criteria.
+2. Impacted tests updated.
+3. Technical notes updated for changed flow/behavior.
+
 ## Definition of Done
 
 - Feature works per ticket scope.
