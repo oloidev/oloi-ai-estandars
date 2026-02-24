@@ -1,0 +1,26 @@
+{
+  "domain": "laravel",
+  "version": "1.0.0",
+  "released_at": "2026-02-24",
+  "skills": [
+    "laravel-action-pattern-enterprise",
+    "laravel-api-versioning-pattern",
+    "laravel-backend-orchestrator",
+    "laravel-backend-task-spec-writer",
+    "laravel-commit-message-standard",
+    "laravel-cqrs-pattern",
+    "laravel-domain-event-pattern",
+    "laravel-endpoint-creation",
+    "laravel-hexagonal-module-creation",
+    "laravel-multi-context-isolation-pattern",
+    "laravel-observability-pattern",
+    "laravel-performance-octane-pattern",
+    "laravel-policy-standard-spatie",
+    "laravel-realtime-event-integration-pattern",
+    "laravel-redis-cache-pattern",
+    "laravel-testing-standard",
+    "laravel-value-object-pattern"
+  ],
+  "deprecated": [],
+  "breaking_changes": []
+}
