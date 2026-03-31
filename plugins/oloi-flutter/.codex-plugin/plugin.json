@@ -1,0 +1,35 @@
+{
+  "name": "oloi-flutter",
+  "version": "1.0.1",
+  "description": "OLOI enterprise Flutter skills for mobile architecture, networking, testing, and delivery.",
+  "author": {
+    "name": "OLOI",
+    "url": "https://github.com/oloidev/oloi-ai-estandars"
+  },
+  "repository": "https://github.com/oloidev/oloi-ai-estandars",
+  "license": "UNLICENSED",
+  "keywords": [
+    "flutter",
+    "mobile",
+    "riverpod",
+    "bloc",
+    "dio"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OLOI Flutter",
+    "shortDescription": "Enterprise Flutter mobile skills",
+    "longDescription": "Reusable OLOI Flutter skills for feature-first architecture, state management, Dio networking, testing, performance, and secure mobile delivery.",
+    "developerName": "OLOI",
+    "category": "Engineering",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use OLOI Flutter to implement a mobile feature end to end.",
+      "Use OLOI Flutter to plan testing and architecture for a Flutter task."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

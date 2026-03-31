@@ -17,9 +17,11 @@ This repository uses a single codebase with release channels by branch.
 5. Create domain tags from `stable`:
    - `laravel-vX.Y.Z`
    - `flutter-vX.Y.Z`
+   - `product-analyst-vX.Y.Z`
 
 ## Required Release Artifacts
 
 - `manifests/<domain>.json` updated.
 - `changelogs/CHANGELOG-<domain>.md` updated.
 - Tag created for each released domain.
+- Matching plugin package under `plugins/` synchronized from the domain source.

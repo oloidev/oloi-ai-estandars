@@ -1,0 +1,34 @@
+{
+  "name": "oloi-laravel",
+  "version": "1.0.0",
+  "description": "OLOI enterprise Laravel backend skills for modular monolith development.",
+  "author": {
+    "name": "OLOI",
+    "url": "https://github.com/oloidev/oloi-ai-estandars"
+  },
+  "repository": "https://github.com/oloidev/oloi-ai-estandars",
+  "license": "UNLICENSED",
+  "keywords": [
+    "laravel",
+    "backend",
+    "hexagonal",
+    "octane"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OLOI Laravel",
+    "shortDescription": "Enterprise Laravel backend skills",
+    "longDescription": "Reusable OLOI Laravel skills for architecture, endpoints, authorization, testing, and performance-safe backend development.",
+    "developerName": "OLOI",
+    "category": "Engineering",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use OLOI Laravel to plan or implement a Laravel backend feature.",
+      "Use OLOI Laravel to create a production-safe endpoint with tests."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

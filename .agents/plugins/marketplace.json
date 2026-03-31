@@ -1,0 +1,44 @@
+{
+  "name": "oloi-enterprise",
+  "interface": {
+    "displayName": "OLOI Enterprise Plugins"
+  },
+  "plugins": [
+    {
+      "name": "oloi-laravel",
+      "source": {
+        "source": "local",
+        "path": "./plugins/oloi-laravel"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Engineering"
+    },
+    {
+      "name": "oloi-flutter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/oloi-flutter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Engineering"
+    },
+    {
+      "name": "oloi-product-analyst",
+      "source": {
+        "source": "local",
+        "path": "./plugins/oloi-product-analyst"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
