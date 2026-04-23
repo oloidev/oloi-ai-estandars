@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mobile Orchestrator"
+  short_description: "Mobile Orchestrator for Flutter"
+  icon_small: "./assets/flutter-small.svg"
+  icon_large: "./assets/flutter.svg"
+  brand_color: "#02569B"
+  default_prompt: "Use $flutter-mobile-orchestrator to handle this Flutter task following OLOI standards."

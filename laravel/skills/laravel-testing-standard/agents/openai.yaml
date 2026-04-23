@@ -1,0 +1,7 @@
+interface:
+  display_name: "Testing Standard"
+  short_description: "Testing Standard for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-testing-standard to handle this Laravel task following OLOI standards."

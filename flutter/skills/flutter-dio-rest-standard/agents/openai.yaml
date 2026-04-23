@@ -1,0 +1,7 @@
+interface:
+  display_name: "Dio REST Standard"
+  short_description: "Dio REST Standard for Flutter"
+  icon_small: "./assets/flutter-small.svg"
+  icon_large: "./assets/flutter.svg"
+  brand_color: "#02569B"
+  default_prompt: "Use $flutter-dio-rest-standard to handle this Flutter task following OLOI standards."

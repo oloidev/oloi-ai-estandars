@@ -1,0 +1,7 @@
+interface:
+  display_name: "API Versioning Pattern"
+  short_description: "API Versioning Pattern for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-api-versioning-pattern to handle this Laravel task following OLOI standards."

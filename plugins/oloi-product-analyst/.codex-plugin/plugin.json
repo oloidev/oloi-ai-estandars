@@ -30,6 +30,9 @@
       "Use OLOI Product Analyst to convert a requirement into a sprint-ready user story.",
       "Use OLOI Product Analyst to turn an idea into implementation tasks or a Figma design plan."
     ],
+    "composerIcon": "./assets/oloi-mark-dark.svg",
+    "logo": "./assets/oloi-logo-dark.svg",
+    "screenshots": [],
     "brandColor": "#7C3AED"
   }
 }

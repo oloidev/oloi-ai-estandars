@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Task Spec Writer"
+  short_description: "Backend Task Spec Writer for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-backend-task-spec-writer to handle this Laravel task following OLOI standards."

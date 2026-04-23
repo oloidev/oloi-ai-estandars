@@ -1,0 +1,7 @@
+interface:
+  display_name: "Policy Standard Spatie"
+  short_description: "Policy Standard Spatie for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-policy-standard-spatie to handle this Laravel task following OLOI standards."

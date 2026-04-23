@@ -29,6 +29,9 @@
       "Use OLOI Laravel to plan or implement a Laravel backend feature.",
       "Use OLOI Laravel to create a production-safe endpoint with tests."
     ],
+    "composerIcon": "./assets/oloi-mark-dark.svg",
+    "logo": "./assets/oloi-logo-dark.svg",
+    "screenshots": [],
     "brandColor": "#0F766E"
   }
 }

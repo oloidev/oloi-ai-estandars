@@ -1,0 +1,7 @@
+interface:
+  display_name: "Realtime Event Integration Pattern"
+  short_description: "Realtime Event Integration Pattern for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-realtime-event-integration-pattern to handle this Laravel task following OLOI standards."

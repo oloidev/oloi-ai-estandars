@@ -30,6 +30,9 @@
       "Use OLOI Flutter to implement a mobile feature end to end.",
       "Use OLOI Flutter to plan testing and architecture for a Flutter task."
     ],
+    "composerIcon": "./assets/oloi-mark-dark.svg",
+    "logo": "./assets/oloi-logo-dark.svg",
+    "screenshots": [],
     "brandColor": "#2563EB"
   }
 }

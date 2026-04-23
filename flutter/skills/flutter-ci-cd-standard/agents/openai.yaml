@@ -1,0 +1,7 @@
+interface:
+  display_name: "CI/CD Standard"
+  short_description: "CI/CD Standard for Flutter"
+  icon_small: "./assets/flutter-small.svg"
+  icon_large: "./assets/flutter.svg"
+  brand_color: "#02569B"
+  default_prompt: "Use $flutter-ci-cd-standard to handle this Flutter task following OLOI standards."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Multi Context Isolation Pattern"
+  short_description: "Multi Context Isolation Pattern for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-multi-context-isolation-pattern to handle this Laravel task following OLOI standards."

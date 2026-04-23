@@ -1,0 +1,7 @@
+interface:
+  display_name: "Domain Event Pattern"
+  short_description: "Domain Event Pattern for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-domain-event-pattern to handle this Laravel task following OLOI standards."

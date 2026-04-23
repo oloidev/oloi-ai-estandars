@@ -1,0 +1,7 @@
+interface:
+  display_name: "Commit Message Standard"
+  short_description: "Commit Message Standard for Flutter"
+  icon_small: "./assets/flutter-small.svg"
+  icon_large: "./assets/flutter.svg"
+  brand_color: "#02569B"
+  default_prompt: "Use $flutter-commit-message-standard to handle this Flutter task following OLOI standards."

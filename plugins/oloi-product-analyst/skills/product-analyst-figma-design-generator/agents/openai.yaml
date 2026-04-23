@@ -1,0 +1,7 @@
+interface:
+  display_name: "Figma Design Generator"
+  short_description: "Figma Design Generator for Product Analyst"
+  icon_small: "./assets/oloi-mark-small.svg"
+  icon_large: "./assets/oloi-logo.svg"
+  brand_color: "#0F766E"
+  default_prompt: "Use $product-analyst-figma-design-generator to turn this requirement into a product deliverable."

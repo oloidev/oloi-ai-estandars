@@ -1,0 +1,7 @@
+interface:
+  display_name: "Redis Cache Pattern"
+  short_description: "Redis Cache Pattern for Laravel"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-redis-cache-pattern to handle this Laravel task following OLOI standards."

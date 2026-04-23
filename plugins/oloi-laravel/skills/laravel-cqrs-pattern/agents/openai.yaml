@@ -1,0 +1,7 @@
+interface:
+  display_name: "CQRS Pattern"
+  short_description: "CQRS Pattern for Laravel Apps"
+  icon_small: "./assets/laravel-small.svg"
+  icon_large: "./assets/laravel.svg"
+  brand_color: "#FF2D20"
+  default_prompt: "Use $laravel-cqrs-pattern to handle this Laravel task following OLOI standards."
