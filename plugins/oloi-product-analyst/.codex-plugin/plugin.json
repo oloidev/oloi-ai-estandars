@@ -1,6 +1,6 @@
 {
   "name": "oloi-product-analyst",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OLOI product analysis skills for user stories, task planning, and Figma design handoff.",
   "author": {
     "name": "OLOI",
@@ -13,13 +13,14 @@
     "analysis",
     "figma",
     "user-story",
-    "planning"
+    "planning",
+    "task-spec"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "OLOI Product Analyst",
     "shortDescription": "Product analysis and planning skills",
-    "longDescription": "Reusable OLOI skills for writing agile user stories, creating stack-aware implementation tasks, and generating Figma design plans with developer handoff guidance.",
+    "longDescription": "Reusable OLOI skills for writing agile user stories, creating stack-aware implementation tasks, and generating Figma design plans with developer handoff guidance, and producing deterministic engineering task specs with strong acceptance rigor.",
     "developerName": "OLOI",
     "category": "Productivity",
     "capabilities": [
@@ -28,7 +29,8 @@
     ],
     "defaultPrompt": [
       "Use OLOI Product Analyst to convert a requirement into a sprint-ready user story.",
-      "Use OLOI Product Analyst to turn an idea into implementation tasks or a Figma design plan."
+      "Use OLOI Product Analyst to turn an idea into implementation tasks or a Figma design plan.",
+      "Use OLOI Product Analyst to turn a requirement into a fixed-format engineering task spec."
     ],
     "composerIcon": "./assets/oloi-mark-dark.svg",
     "logo": "./assets/oloi-logo-dark.svg",

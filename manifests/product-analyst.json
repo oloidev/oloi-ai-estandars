@@ -1,11 +1,12 @@
 {
   "domain": "product-analyst",
-  "version": "0.1.0",
-  "released_at": "2026-03-30",
+  "version": "0.2.0",
+  "released_at": "2026-05-21",
   "skills": [
     "product-analyst-user-story-writer",
     "product-analyst-task-breakdown-writer",
-    "product-analyst-figma-design-generator"
+    "product-analyst-figma-design-generator",
+    "product-analyst-task-spec-master-format"
   ],
   "deprecated": [],
   "breaking_changes": []

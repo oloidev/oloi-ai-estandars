@@ -74,6 +74,8 @@ When user requests:
   -> Load `product-analyst-task-breakdown-writer`.
 - "Create figma design from idea"
   -> Load `product-analyst-figma-design-generator`.
+- "Create master task spec"
+  -> Load `product-analyst-task-spec-master-format`.
 
 If request includes additional delivery planning needs,
 expand with stack-specific skill recommendations in the output.
@@ -98,3 +100,4 @@ A skill is a set of local instructions stored in a `SKILL.md` file.
 - product-analyst-user-story-writer: Transforms product requirements into agile user stories with functional flow, acceptance criteria, non-functional requirements, risk analysis, and stack-specific task breakdown. (file: /Users/kamikasu/oloi/oloi-ai-estandars/product-analyst/skills/product-analyst-user-story-writer/SKILL.md)
 - product-analyst-task-breakdown-writer: Converts a requirement or user story into implementation-ready task breakdown by stack (Laravel backend, Next.js frontend, Flutter mobile), including sequencing, dependencies, acceptance criteria, and suggested skills. (file: /Users/kamikasu/oloi/oloi-ai-estandars/product-analyst/skills/product-analyst-task-breakdown-writer/SKILL.md)
 - product-analyst-figma-design-generator: Transforms product ideas into professional Figma designs through MCP, including UX flow, design system setup, reusable components, themes, prototypes, animation specs, and developer handoff artifacts. (file: /Users/kamikasu/oloi/oloi-ai-estandars/product-analyst/skills/product-analyst-figma-design-generator/SKILL.md)
+- product-analyst-task-spec-master-format: Generates definitive, high-detail engineering task specs using a fixed, non-negotiable format for backend/frontend/product work. Use this whenever the user asks to create a task/ticket/spec and expects consistent structure and acceptance rigor. (file: /Users/kamikasu/oloi/oloi-ai-estandars/product-analyst/skills/product-analyst-task-spec-master-format/SKILL.md)

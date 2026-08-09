@@ -1,0 +1,7 @@
+interface:
+  display_name: "Task Spec Master Format"
+  short_description: "Task Spec Master Format for Product Analyst"
+  icon_small: "./assets/oloi-mark-small.svg"
+  icon_large: "./assets/oloi-logo.svg"
+  brand_color: "#0F766E"
+  default_prompt: "Use $product-analyst-task-spec-master-format to produce a deterministic engineering task spec."
