@@ -19,24 +19,35 @@ Use a single Dio client abstraction in `core/networking`.
 - Error interceptor (map HTTP/network errors).
 - Optional retry/backoff policy for idempotent calls.
 - Request/response DTOs per endpoint.
+- Session coordinator for token refresh and logout.
 
 ## Mapping Rules
 
 - Data source returns DTOs.
 - Repository maps DTOs -> domain entities.
 - Never leak Dio exceptions outside data layer.
+- Never pass untyped `dynamic` response maps into application or presentation.
 
 ## Reliability Rules
 
 - Define timeouts explicitly.
 - Add cancellation support for user-abandoned requests.
 - Implement pagination contracts consistently.
+- Cancel requests abandoned by navigation or lifecycle changes.
+- Retry only idempotent operations or explicitly idempotent commands.
+- On `401`, allow one single-flight refresh operation; queue eligible requests,
+  replay them once, and fail closed when refresh fails. Never refresh in a loop.
+- Include correlation/request identifiers without logging tokens or sensitive payloads.
 
 ## Security Rules
 
 - No tokens in logs.
 - No secrets in source code.
 - Use secure storage for credentials.
+
+For local Docker development, configure the base URL through an environment
+flavor. Do not weaken production transport rules to make local HTTP convenient;
+the insecure exception must be explicit and development-only.
 
 ## Execution Default
 

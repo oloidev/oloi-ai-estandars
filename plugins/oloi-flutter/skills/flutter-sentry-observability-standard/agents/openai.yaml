@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sentry Observability"
+  short_description: "Privacy-safe Flutter telemetry"
+  default_prompt: "Use $flutter-sentry-observability-standard for Flutter Sentry and observability work."

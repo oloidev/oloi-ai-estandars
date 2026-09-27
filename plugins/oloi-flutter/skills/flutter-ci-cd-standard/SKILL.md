@@ -12,10 +12,10 @@ when_to_use:
 
 ## Mandatory PR Pipeline
 
-1. `flutter pub get`
-2. `dart format --set-exit-if-changed .`
-3. `dart analyze`
-4. `flutter test --coverage`
+1. `fvm flutter pub get`
+2. `fvm dart format --set-exit-if-changed .`
+3. `fvm dart analyze`
+4. `fvm flutter test --coverage`
 5. Build smoke check for target platforms
 
 ## Quality Gates
@@ -23,12 +23,17 @@ when_to_use:
 - Pipeline must fail on analyzer errors.
 - Pipeline must fail on test failures.
 - Enforce minimum coverage threshold agreed by team.
+- Keep the SDK pinned through `.fvmrc`; CI must fail when commands bypass FVM.
+- Validate local/staging/production flavor configuration without committing secrets.
+- Run the smallest applicable gate on every change and the full gate before closure.
 
 ## Release Pipeline
 
 - Use versioning policy (SemVer or app-internal standard).
 - Generate signed artifacts using secure secrets.
 - Keep release notes linked to commit/PR history.
+- Manual store upload is acceptable initially, but signed artifacts must still be
+  reproducible and produced only from a verified branch/tag.
 
 ## Execution Default
 

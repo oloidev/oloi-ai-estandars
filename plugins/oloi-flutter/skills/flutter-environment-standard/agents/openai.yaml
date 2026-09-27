@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter Environment Standard"
+  short_description: "Reproducible FVM and flavor setup"
+  default_prompt: "Use $flutter-environment-standard for Flutter SDK, flavor, and environment configuration."

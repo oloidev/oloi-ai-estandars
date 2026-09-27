@@ -1,0 +1,4 @@
+interface:
+  display_name: "Native Device Testing"
+  short_description: "Flutter device, tablet, and native testing"
+  default_prompt: "Use $flutter-native-device-testing-standard for Flutter device, lifecycle, accessibility, or native integration testing."

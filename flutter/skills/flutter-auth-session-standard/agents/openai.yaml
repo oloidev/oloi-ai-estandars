@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auth Session Standard"
+  short_description: "Secure Sanctum sessions for Flutter"
+  default_prompt: "Use $flutter-auth-session-standard for Flutter authentication and session work."

@@ -286,7 +286,13 @@ A skill is a set of local instructions stored in a `SKILL.md` file.
 - flutter-security-standard: Enforces secure Flutter mobile practices including secret management, secure token storage, transport hardening, and privacy-safe observability. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-security-standard/SKILL.md)
 - flutter-ci-cd-standard: Defines CI/CD quality gates and release automation for Flutter apps, including analyze, test, coverage, build validation, and artifact governance. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-ci-cd-standard/SKILL.md)
 - flutter-commit-message-standard: Generates professional conventional commit messages for Flutter/Dart work with clear scope, architecture impact, testing notes, and release readiness. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-commit-message-standard/SKILL.md)
-- flutter-mobile-orchestrator: Meta-skill that analyzes a Flutter request and selects the minimum required Flutter skills in the correct execution order, with architecture and risk checks. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-mobile-orchestrator/SKILL.md)
+- flutter-mobile-orchestrator: Meta-skill that analyzes a SPEC-driven Flutter request and selects the minimum required Flutter skills in the correct execution order, with architecture and risk checks. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-mobile-orchestrator/SKILL.md)
+- flutter-auth-session-standard: Sanctum token/session lifecycle with single-flight refresh and deterministic tests. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-auth-session-standard/SKILL.md)
+- flutter-contract-testing-standard: Backend OpenAPI compatibility and typed DTO contract checks. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-contract-testing-standard/SKILL.md)
+- flutter-environment-standard: FVM, flavors, local Docker API, and secret-safe configuration. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-environment-standard/SKILL.md)
+- flutter-native-device-testing-standard: Android/iOS/tablet, lifecycle, accessibility, and native-device verification. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-native-device-testing-standard/SKILL.md)
+- flutter-sentry-observability-standard: Privacy-safe Sentry errors, performance, and release context. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-sentry-observability-standard/SKILL.md)
+- flutter-spec-review-standard: Separate SPEC compliance and engineering standards review. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/skills/flutter-spec-review-standard/SKILL.md)
 
 ---
 
@@ -296,13 +302,15 @@ An agent is a role-specialized execution profile that coordinates one or more sk
 
 ### Available agents
 
-- flutter-orchestrator-agent: End-to-end coordinator for Asana tasks. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-orchestrator-agent.md)
+- flutter-orchestrator-agent: End-to-end coordinator for SPEC-driven tasks. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-orchestrator-agent.md)
 - flutter-architect-agent: Clean Architecture and modular boundaries authority. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-architect-agent.md)
 - flutter-feature-agent: Product feature implementation owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-feature-agent.md)
 - flutter-api-agent: Dio REST integration and reliability owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-api-agent.md)
 - flutter-test-agent: Automated testing strategy and coverage owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-test-agent.md)
 - flutter-performance-agent: Profiling-first optimization owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-performance-agent.md)
 - flutter-security-agent: Mobile security hardening owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-security-agent.md)
+- flutter-ci-cd-agent: Environment, quality-gate, and artifact verification owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-ci-cd-agent.md)
+- flutter-review-agent: SPEC compliance and AI-regression review owner. (file: /Users/kamikasu/oloi/oloi-ai-estandars/flutter/agents/roles/flutter-review-agent.md)
 
 ### Agent Routing Strategy
 
@@ -318,3 +326,9 @@ An agent is a role-specialized execution profile that coordinates one or more sk
   - add `flutter-performance-agent`
 - Security-sensitive scope:
   - add `flutter-security-agent`
+- Authentication/session scope:
+  - add `flutter-api-agent` + `flutter-security-agent` + `flutter-test-agent`
+- Foundation or environment scope:
+  - add `flutter-architect-agent` + `flutter-test-agent` + `flutter-ci-cd-agent`
+- SPEC closure or merge review:
+  - add `flutter-review-agent`

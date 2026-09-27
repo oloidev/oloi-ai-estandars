@@ -17,12 +17,22 @@ Use a feature-first Clean Architecture:
 - `domain`: entities, repository contracts, value objects
 - `data`: DTO/models, remote/local data sources, repository implementations
 
+Application composition belongs in `app/`; cross-cutting adapters belong in
+`core/`; product behavior belongs in `features/{feature}`. Platform plugins,
+secure storage, Sentry, and navigation are adapters at the boundary, never
+domain dependencies.
+
 ## Rules
 
 1. UI never depends on Dio or concrete data sources.
 2. Domain has no Flutter imports.
 3. Application coordinates use cases and maps failures to UI-safe states.
 4. Data layer maps external schemas to domain entities.
+5. Providers compose dependencies; they do not become a second domain layer.
+6. Shared code must have a demonstrated cross-feature responsibility; do not
+   create generic dumping grounds.
+7. Tablet layouts use available window constraints, not device-name checks.
+8. Every cross-layer exception requires an explicit architectural decision.
 
 ## Delivery Checklist
 
@@ -32,6 +42,7 @@ Use a feature-first Clean Architecture:
 - Implement repository adapters in data layer.
 - Wire dependencies through Riverpod providers.
 - Add unit tests for use cases and mapping code.
+- Add an architecture test or static boundary rule for every new module boundary.
 
 ## Execution Default
 

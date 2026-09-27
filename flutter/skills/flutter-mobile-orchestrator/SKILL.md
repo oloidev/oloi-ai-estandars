@@ -9,13 +9,11 @@ when_to_use:
 
 # Flutter Mobile Orchestrator
 
-You orchestrate; you do not start coding yet.
+You orchestrate; you do not start coding until the task contract and risk are explicit. In Homu repositories, an approved SPEC is the source of truth. A ticket, prompt, or conversation can provide context but cannot expand SPEC scope.
 
 ## Intake Rule
 
-Assume input is a copied Asana task with context about problem, goal, and constraints.
-Use that ticket as primary scope definition and infer the best technical approach by default.
-Assume full execution is expected: implementation + tests + technical documentation updates when applicable.
+Read `AGENTS.md`, the applicable SPEC, the README, and relevant architecture and testing documents before editing. Extract problem, objective, scope in/out, acceptance criteria, dependencies, risks, and verification commands. Separate confirmed decisions from proposals and stop on missing contracts, permissions, platform requirements, or security decisions.
 
 ## Step 1: Classify Request
 
@@ -28,17 +26,25 @@ Classify as one of:
 - Testing expansion
 - Release pipeline work
 - Bug fix
+- Project foundation/bootstrap
+- Authentication/session
+- Native platform integration
+- Accessibility/device quality
+- SPEC/code review
 
 ## Step 2: Select Skills
 
 Base selection map:
 
 - New feature -> `flutter-architecture-standard` + `flutter-state-management-hybrid` + `flutter-testing-standard`
-- API integration -> `flutter-dio-rest-standard` + `flutter-testing-standard`
+- API integration -> `flutter-dio-rest-standard` + `flutter-contract-testing-standard` + `flutter-testing-standard`
+- Authentication/session -> `flutter-auth-session-standard` + `flutter-dio-rest-standard` + `flutter-security-standard` + `flutter-testing-standard`
 - Complex workflow -> `flutter-state-management-hybrid` (BLoC path) + `flutter-testing-standard`
 - Performance -> `flutter-performance-standard`
-- Security -> `flutter-security-standard`
-- CI/CD -> `flutter-ci-cd-standard`
+- Security/observability -> `flutter-security-standard` + `flutter-sentry-observability-standard`
+- CI/CD/environments -> `flutter-ci-cd-standard` + `flutter-environment-standard`
+- Native/device/accessibility -> `flutter-native-device-testing-standard`
+- SPEC or closure review -> `flutter-spec-review-standard` + applicable standards
 - Commit preparation -> `flutter-commit-message-standard`
 
 ## Step 3: Riverpod vs BLoC Decision
@@ -54,6 +60,19 @@ Return:
 3. Architectural risks.
 4. Test strategy.
 5. Acceptance checklist.
+
+## Execution levels
+
+Name the level before running commands:
+
+1. `focalized`: affected seam and direct tests.
+2. `architecture`: format, analyzer, dependency boundaries, and contracts.
+3. `suite`: complete local unit/widget/integration-eligible suite.
+4. `device`: emulator, simulator, or physical-device validation.
+5. `quality`: accessibility, golden, performance, memory, security, mutation, or property tests as applicable.
+6. `review`: separate SPEC compliance and engineering standards review.
+
+Do not load every skill for every task. Select the smallest set that covers the risk, and record why a seemingly relevant skill is not applicable.
 
 ## Completion Rule
 

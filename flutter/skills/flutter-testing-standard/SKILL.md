@@ -16,10 +16,23 @@ Apply this test pyramid:
 2. Widget tests (medium): UI behavior and state rendering.
 3. Integration tests (selective): critical user journeys.
 
+Add selective quality layers when the change warrants them:
+
+- Contract tests against the backend OpenAPI/schema.
+- Architecture/import tests.
+- Golden tests for stable, high-risk visual surfaces.
+- Accessibility guideline and semantics tests.
+- Native-device tests for permissions, notifications, lifecycle, and platform views.
+- Property tests for domain invariants.
+- Mutation tests for critical domain/application code.
+- Profile-mode performance and memory tests on real devices.
+
 ## Coverage Policy
 
 - Domain/Application: >= 85%.
 - New critical flow: must include integration test.
+- Critical domain/application diff: mutation or an explicit non-applicability decision.
+- Device-facing change: emulator/simulator coverage plus physical-device evidence when hardware behavior matters.
 
 ## Suite Requirements per Feature
 
@@ -32,7 +45,10 @@ Apply this test pyramid:
 
 - `flutter test` for unit/widget.
 - `flutter test integration_test` for integration flows.
+- `fvm flutter test` and `fvm dart analyze` when FVM is configured.
 - Deterministic fixtures and fake repositories where possible.
+- Patrol is preferred when a journey must interact with native platform UI; use
+  the official `integration_test` package for Flutter-only device journeys.
 
 ## Execution Default
 
@@ -47,3 +63,7 @@ For execution-oriented tasks, deliver end-to-end by default:
 
 - No flaky timer-dependent tests without fake clock.
 - No network calls in unit/widget tests.
+- No sleeps as synchronization; use fake clocks, controllable futures, and
+  lifecycle/test bindings.
+- Do not treat coverage percentage as proof of behavioral completeness.
+- Do not update goldens merely to hide a regression; record the visual decision.

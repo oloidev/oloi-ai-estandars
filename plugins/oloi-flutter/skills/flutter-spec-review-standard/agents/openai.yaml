@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter SPEC Review"
+  short_description: "Review scope and Flutter standards"
+  default_prompt: "Use $flutter-spec-review-standard to review this Flutter change against its SPEC and standards."

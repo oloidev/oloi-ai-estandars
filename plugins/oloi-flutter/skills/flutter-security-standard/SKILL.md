@@ -15,6 +15,8 @@ when_to_use:
 - Use secure token storage.
 - Keep access token lifecycle explicit.
 - Handle refresh flows with replay protection.
+- Logout must revoke/clear the session locally and invalidate dependent state.
+- A refresh failure must fail closed and must not loop or retain stale credentials.
 
 ## Transport Security
 
@@ -27,6 +29,8 @@ when_to_use:
 - No API keys/secrets hardcoded in source.
 - Use environment-based configuration injection.
 - Sanitize logs and crash reports (no PII/tokens).
+- Configure Sentry before production use with scrubbing rules for tokens,
+  authorization headers, passwords, personal identifiers, and raw API payloads.
 
 ## Data Safety
 
@@ -38,6 +42,7 @@ when_to_use:
 
 - Validate and sanitize all remote input before domain mapping.
 - Fail closed on malformed security-sensitive payloads.
+- Test unauthorized, expired-session, refresh-race, logout, and malformed-token cases.
 
 ## Execution Default
 

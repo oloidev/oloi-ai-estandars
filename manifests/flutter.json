@@ -1,6 +1,6 @@
 {
   "domain": "flutter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "released_at": "2026-02-24",
   "skills": [
     "flutter-architecture-standard",
@@ -11,7 +11,13 @@
     "flutter-security-standard",
     "flutter-ci-cd-standard",
     "flutter-commit-message-standard",
-    "flutter-mobile-orchestrator"
+    "flutter-mobile-orchestrator",
+    "flutter-auth-session-standard",
+    "flutter-contract-testing-standard",
+    "flutter-environment-standard",
+    "flutter-native-device-testing-standard",
+    "flutter-sentry-observability-standard",
+    "flutter-spec-review-standard"
   ],
   "deprecated": [],
   "breaking_changes": []
